@@ -11,14 +11,14 @@ number_a = int(input('Введите положительное число А: '
 number_b = int(input('Введите положительное число Б: '))
 
 # Вариант одни.
-# def sum_number(a, b):
-#     if a == 0:
-#         return b
-#     elif b == 0:
-#         return a
-#     else:
-#         return sum_number(a+1, b-1)
-# print(f'Сумма А и Б равна {sum_number(number_a, number_b)}')
+ def sum_number(a, b):
+     if a == 0:
+         return b
+     elif b == 0:
+         return a
+     else:
+         return sum_number(a+1, b-1)
+ print(f'Сумма А и Б равна {sum_number(number_a, number_b)}')
 
 # Вариант два. Увеличивает быстродействие в случае если числа сильно отличаются. Например если 
 # число А будет равно 200, а Б равно 1, то рекурсия будет вызвана 200 раз. Если поменять их местами.
